@@ -27,7 +27,7 @@ import toast from 'react-hot-toast';
 
 export const CartContext = createContext();
 
-export default function CartContextProvider(props) {
+export default function CartContextProvider({children}) {
 
   let products = [
     { id: 1, title: "Dell G15-5520", category: "Labtop", color: "Black", price: 36870, salePrice: 36270, imageURL: Labtop1 },
@@ -78,7 +78,8 @@ function addFav(id) {
             removeFromFavorites(id);
         }
     } else {
-         window.location.href = '/Cart_Managment/login';
+       toast.error("Login first to add to your favorites");
+       
     }
 }
 
@@ -143,12 +144,12 @@ function addTOCartEvent(id) {
             toast.success("Product added to cart successfly")
         }
     } else {
-        window.location.href = '/Cart_Managment/login';
+        toast.error("Login first to add to your cart");
     }
 }
   return (
     <CartContext.Provider value={{ products,addFav,favorites,setFavorites ,total ,pls, mins ,addItemStorage,addTOCartEvent,removeFromCart}}>
-      {props.children}
+      {children}
     </CartContext.Provider>
   );
 }

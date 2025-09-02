@@ -8,7 +8,6 @@ import CartProducts from './components/CartProducts';
 import NotFound from './components/NotFound'
 
 function App() {
-
   const router = createBrowserRouter([
        {path:"/" , element:<Layout/>  ,children:[
          {index:true ,element:<Products/>},
@@ -16,7 +15,7 @@ function App() {
          {path:"register",element:<Register/>},
          {path:"cartProducts",element:<CartProducts/>},
          {path:"*",element:<NotFound/>}
-         ]
+        ]
       }
   ],{
        basename: '/Cart_Managment', // Replace with your GitHub repository name
