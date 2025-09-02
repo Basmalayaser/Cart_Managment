@@ -46,7 +46,7 @@ export default function Products() {
 
   return (
     <>
-      <main className="bg-light pt-4">
+      <main className="bg-light pt-5">
         <section className="searchDiv container">
           <div className="row">
             <div className="col-6 p-0">

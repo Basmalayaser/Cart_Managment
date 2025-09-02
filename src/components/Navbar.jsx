@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <>
-    <header className="bg-black h-70">
+    <header className="bg-dark h-70">
       <div className="container">
         <div className="d-flex justify-content-between align-items-center">
           <a href="index.html" className="brand d-inline">
