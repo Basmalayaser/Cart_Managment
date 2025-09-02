@@ -78,7 +78,7 @@ function addFav(id) {
             removeFromFavorites(id);
         }
     } else {
-         window.location = "/Cart_Managment/login";
+         window.location.href = '/Cart_Managment/login';
     }
 }
 
@@ -143,7 +143,7 @@ function addTOCartEvent(id) {
             toast.success("Product added to cart successfly")
         }
     } else {
-        window.location = "/Cart_Managment/login";
+        window.location.href = '/Cart_Managment/login';
     }
 }
   return (

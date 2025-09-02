@@ -8,6 +8,7 @@ import CartProducts from './components/CartProducts';
 import NotFound from './components/NotFound'
 
 function App() {
+
   const router = createBrowserRouter([
        {path:"/" , element:<Layout/>  ,children:[
          {index:true ,element:<Products/>},

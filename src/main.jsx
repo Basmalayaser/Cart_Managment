@@ -22,7 +22,7 @@ import { UserContext, UserProvider } from './context/UserContext.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <UserProvider>
+    <UserProvider >
         <CartContextProvider>
            <App />
            <Toaster/>

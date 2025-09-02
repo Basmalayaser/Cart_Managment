@@ -61,7 +61,7 @@ export default function Login(){
          <input type="submit" value="Sign In" className='rounded-pill py-2 mb-3 ps-3 text-light bg-dark' />
 
         <p>
-         Sign up Now? <Link to="register" className="text-dark">Register</Link>
+         Sign up Now? <Link to="/register" className="text-dark">Register</Link>
         </p>
       </form>
     </section>
