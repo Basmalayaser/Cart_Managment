@@ -16,9 +16,10 @@ function App() {
          
 
        ]
-        
-     }
-  ])
+        }
+  ],{
+       basename: '/Cart_Managment', // Replace with your GitHub repository name
+  })
 
   return (
     <>

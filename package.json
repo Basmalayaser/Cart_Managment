@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Basmalayaser.github.io/Ecommerce_CartManagement/",
+  "homepage": "https://Basmalayaser.github.io/Cart_Managment/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
